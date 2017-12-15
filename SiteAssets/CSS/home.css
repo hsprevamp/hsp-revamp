@@ -1,4 +1,6 @@
-
+body{
+    font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+}
 .page_container{
     max-width: 1600px;
     display: flex;
@@ -9,6 +11,50 @@
     width:70%
 }
 
+.mc_tile_container .midblue {
+    background-color: #0072C6;
+    color: white;
+}
+
+.mc_tile_container .darkblue {
+    background-color: #002050;
+    color: white;
+}
+
+.mc_tile_container .darkpurplegradient {
+    background-color: #442359;
+    color: white;
+}
+
+.mc_tile_container .purple {
+    background-color: #9B4F96;
+    color: white;
+}
+
+.mc_tile_container .indigo {
+    background-color: #4668C5;
+    color: white;
+}
+
+.hero_banner_cont{
+    width: 223px;
+    height: 74px;
+    padding: 15px 20px 15px 17px;
+    vertical-align: middle;
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 23%;
+    background: url("D://HSP_redesign/SiteAssets/Images/slider_ct_bg.png") repeat;
+    font-size: 26pt;
+    line-height: 70px;
+    font-family: Segoe UI light;
+    font-weight: normal;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .right_social_content{
     max-width: 30%;
     width: 30%;
@@ -17,15 +63,21 @@
 }
 .mc_tile_container{
     width: 100%;
-    height: 120px
+    height: 120px;
+    /* margin-bottom: 1%; */
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: space-between;
 }
 .hero_banner{
     width: 100%;
     height: 200px;
+    background-image: url("D://HSP_redesign/SiteAssets/Images/Slider.jpg");
+    position: relative;
 }
 .main_content_tiles{
-    width: 32%;
-    margin: 0.5%;
+    width: 33%;
+    /* margin:0.5%; */
     position: relative;
     display: inline-flex;
     height: 100%;
@@ -88,3 +140,45 @@
 
 
 
+.main_content_child_tiles{
+    width: 50%;
+    margin: 0 0.5%;
+    height: 100%;
+}
+
+.mc_tile_container .main_content_tiles:first-child, .main_content_child_tiles:first-child{
+    margin-left: 0px;
+}
+.mc_tile_container .main_content_tiles:last-child, .main_content_child_tiles:last-child{
+    margin-right: 0px;
+}
+
+ .main_content_tiles .tiledescription {
+    width: 100%;
+    height: 22px;
+    font-size: 10pt;
+    font-family: "Segoe UI";
+    position: absolute;
+    bottom: 0px;
+    background-color: #2B4078;
+    background-image: url("D:/HSP_redesign/SiteAssets/Images/email-b.png");
+    background-repeat: no-repeat;
+    background-position: 7px 6px;
+    /* padding-left: 30px; */
+    padding-top: 5px;
+}
+
+.main_content_tiles .gettrainedtitle {
+    background-image: url("D:/HSP_redesign/SiteAssets/Images/get-trained.png");
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding-left: 28px;
+    padding-top: 2px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 12pt;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 210px;
+}
